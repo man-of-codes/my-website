@@ -15,6 +15,9 @@ yesBtn.addEventListener("click", () => {
     document.body.appendChild(confetti);
     setTimeout(() => confetti.remove(), 3000);
   }
+  setTimeout(() => {
+    window.location.href = "valentine.html";
+  }, 1000);  // small delay so confetti shows
 });
 
 // No button → runs away
@@ -25,11 +28,10 @@ noBtn.addEventListener("mousemove", () => {
   const randomX = Math.random() * maxX;
   const randomY = Math.random() * maxY;
 
-  noBtn.style.position = "fixed";
+  noBtn.style.position = "absolute";
   noBtn.style.left = randomX + "px";
   noBtn.style.top = randomY + "px";
 });
-
 
 // Floating hearts
 function createHeart() {

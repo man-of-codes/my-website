@@ -31,6 +31,10 @@ header {
   letter-spacing: 2px;
   animation: fadeIn 2s ease-in-out;
 }
+p {
+  font-size: 24px;
+  font-weight: bold;
+}
 section {
   min-height: 100vh;
   padding: 50px;
