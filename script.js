@@ -21,7 +21,7 @@ yesBtn.addEventListener("click", () => {
 });
 
 // No button → runs away
-noBtn.addEventListener("mousemove", () => {
+noBtn.addEventListener("mouseover", () => {
   const maxX = window.innerWidth - noBtn.offsetWidth;
   const maxY = window.innerHeight - noBtn.offsetHeight;
 
