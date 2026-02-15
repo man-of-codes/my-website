@@ -93,6 +93,10 @@ button:hover {
   background: red;
   border-radius: 50%;
 }
+#noBtn {
+  transition: all 0.05s linear;
+}
+
 .heart::before { top: -10px; left: 0; }
 .heart::after { left: 10px; top: 0; }
 @keyframes float {

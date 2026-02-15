@@ -1,5 +1,5 @@
 const yesBtn = document.getElementById("yesBtn");
-const noBtn = document.getElementById("noBtn");
+const nooBtn = document.getElementById("noBtn");
 
 // Yes button → confetti + message
 yesBtn.addEventListener("click", () => {
@@ -18,11 +18,18 @@ yesBtn.addEventListener("click", () => {
 });
 
 // No button → runs away
-noBtn.addEventListener("mouseover", () => {
-  const x = Math.floor(Math.random() * 200) - 100;
-  const y = Math.floor(Math.random() * 100) - 50;
-  noBtn.style.transform = `translate(${x}px, ${y}px)`;
+noBtn.addEventListener("mousemove", () => {
+  const maxX = window.innerWidth - noBtn.offsetWidth;
+  const maxY = window.innerHeight - noBtn.offsetHeight;
+
+  const randomX = Math.random() * maxX;
+  const randomY = Math.random() * maxY;
+
+  noBtn.style.position = "fixed";
+  noBtn.style.left = randomX + "px";
+  noBtn.style.top = randomY + "px";
 });
+
 
 // Floating hearts
 function createHeart() {
