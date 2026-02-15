@@ -50,8 +50,8 @@ section {
 }
 
 .images img {
-    width: 170px;
-    height: 200px;
+    width: 220px;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s ease;
