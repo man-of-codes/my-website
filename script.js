@@ -6,7 +6,7 @@ yesBtn.addEventListener("click", () => {
   alert("I knew it ❤️ You’re my forever!");
   for (let i = 0; i < 100; i++) {
     const confetti = document.createElement("div");
-    confetti.textContent = "🎉";
+    confetti.textContent = "💗    💗     💗";
     confetti.style.position = "fixed";
     confetti.style.left = Math.random() * window.innerWidth + "px";
     confetti.style.top = Math.random() * window.innerHeight + "px";
